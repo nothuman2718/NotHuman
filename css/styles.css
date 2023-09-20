@@ -24,6 +24,7 @@ body{
 h1,h2,h3{
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 h1{
     font-size: 7rem;
@@ -370,16 +371,17 @@ a{
 /* Grids */
 .grid{
     display: grid;
+    
 }
 @media screen and (min-width:768px){
-    .grid--1x2{
-        grid-template-columns: repeat(2,1fpr);
+    .grid--1x2 {
+        grid-template-columns:1fr 1fr;
     }
     
 }
 @media screen and (min-width:1024px){
     .grid--1x3{
-        grid-template-columns: repeat(3,1fpr);
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
@@ -564,3 +566,20 @@ a{
         border: 0;
     }
 }
+/* Hero */
+.hero{
+    clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 100%);
+}
+.hero__tagline{
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
+.hero__image{
+    width:100%;
+}
+
+
+
+
