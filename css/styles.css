@@ -167,7 +167,7 @@ a{
     font-weight: 600;
     border: 0;
     border-radius: 50px;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
@@ -244,6 +244,7 @@ a{
 .input--group .input{
     border: 0;
     flex-grow: 1;
+    width:0;
     padding: 1.5rem 2rem;
 }
 .input--group .btn{
@@ -623,8 +624,9 @@ a{
     max-width: 670px;
 }
 .block-domain__prices{
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -661,7 +663,7 @@ a{
     width: 100%;
     height: 20rem;
 }
-
+.paddin
 /* Showcase Block */
 .block-showcase__image{
     width: 100%;
@@ -740,4 +742,13 @@ a{
     .footer__heading{
         font-size: 1.6rem;
     }
+}
+/* Callout  */
+.callout-signup{
+    transform: translateY(5rem);
+    margin: 0rem 8rem 0rem 8rem;
+}
+.block__gap{
+    padding-bottom: 1rem;
+    padding-top: 3rem;
 }
